@@ -2,6 +2,8 @@ package Projeto_final_bloco_01;
 
 import java.util.Scanner;
 
+import Doceria_UT.Cores;
+
 public class MenuDoceria {
 
 	public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class MenuDoceria {
 
 		while (true) {
 			
+			System.out.println(Cores.ANSI_TEXT_RED__BACKGROUND + Cores.ANSI_TEXT_BLACK_BACKGROUND);
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("           DOCERIA DORY                              ");
@@ -29,43 +32,43 @@ public class MenuDoceria {
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Escolha uma opção:                                   ");
-			System.out.println("                                                     ");
-			
+			System.out.println("                                                     " + Cores.TEXT_RESET);
+						
 			opcao = leia.nextInt();
 			
 			if (opcao == 9) {
-				System.out.println("\nSeja Bem-Vindo a Doceria Doly!");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "\nSeja Bem-Vindo a Doceria Doly!");
 				leia.close();
 				System.exit(0);
 			}
 			switch (opcao) {
 			case 1: 
-				System.out.println("adicionar produtos \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "adicionar produtos \n\n");
 				
 				break;
 			case 2: 
-				System.out.println("Listar todos os produtos do Estoque\n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Listar todos os produtos do Estoque\n\n");
 				
 				break;
 			case 3: 
-				System.out.println("Buscar Produto \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Buscar Produto \n\n");
 				
 				break;
 			case 4: 
-				System.out.println("Atualizar Produtos no Estoque \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Atualizar Produtos no Estoque \n\n");
 				
 				break;
 			case 5: 
-				System.out.println("Excluir Produto do Estoque \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Excluir Produto do Estoque \n\n");
 				
 				break;
 			case 6: 
-				System.out.println("Atualizar Valor do Produto \n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD + "Atualizar Valor do Produto \n\n");
 				
 				
 				break;
 			default: 
-				System.out.println("\nOpção Inválida!\n");
+				System.out.println(Cores.TEXT_RED_BOLD + "\nOpção Inválida!\n");
 				break;
 			}
 			
